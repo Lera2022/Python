@@ -114,10 +114,6 @@
 # for i in 'qwe - rty':
 #     print(i)
 
-from http.client import FORBIDDEN
-import numbers
-
-
 # print(len(text))                    # 39
 # print('ещё' in text)                # true
 # print(text.isdigit())               # False
