@@ -1,183 +1,200 @@
-# # print('hello world')
+# Файлы
 
+# with open('file.txt', 'a') as data:
+#   data.write('line 1111\n')
+#   data.write('line 2222\n')
 
-# # типы данных и переменная
-# # int, float, boolean, str, list, None
-# value = None
-# # print(type(value))
+# colors = ['red', 'green', 'blue123']
+# data = open('file.txt', 'a')
+# # data.writelines(colors)  # разделителей не будет
+# data.write('LINE121\n')
+# data.write('LINE131\n')
+# data.close()
 
-# # print(type(a))
-# # print(type(b))
-# value = 12334
-# # print(type(value))
-# a = 123
-# b = 1.23
-# s = 'hello world'
+# path = 'file.txt'
+# data = open(path, 'r')
+# for line in data:
+#     print(line)
+# data.close
 
-# print(s) # вывод строки
-# print(a, '-', b, '-', s)
-# print('{1} - {2} - {0}'.format(a, b, s))
-# print(f'{a} - {b} - {s}')
-
-# f = False
-# print(f)
-# list = ['1', '2', '3']
-# col = ['hello', 1, 2, 4.5, True]
-# print(list)
-# print(col)
-
-# Ввод и вывод данных
-# print, input
-
-# print('Введите a')
-# a = float(input())
-# print('Введите b')
-# b = float(input())
-# print(a, ' + ', b, ' = ', a + b)
-# print('{} {}'.format(a, b))
-# print(f'{a} {b}')
-
-# Арифметические операции
-# +, -, *, /, %, //, **
-# **, ⊕, ⊖, *, /, //, %, +, -
-# (), Сокращённые операции
-
-# a = 1.31231223
-# b = 3
-# c = round(a * b, 7)
-# print(c)
-
-# a = 3
-# a *= 5
-
-# print(a)
-
-# Логические операции
-# >, >=, <, <=, ==, !=
-# not, and, or - не путать с &, |, ̂
-# is, is not, in, not in
-# gen
-
-# a = 1 < 3 < 5 < 10
-# print(a)
-
-# func = 1
-# T = 4
-# x = 2
-# print(func<T>(x))
-
-# f = [1, 2, 3, 4]
-# print (f)
-# print (not 2 in f)
-
-# is_odd = f[0] % 2 == 0
-# print(is_odd)
-
-# Управляющие конструкции
-# if, if-else
-
-# a = int(input('a = '))
-# b = int(input('b = '))
-# if a > b:
-#     print(a)
-# else:
-#     print(b)
-
-# username = input ('Введите имя: ')
-# if username == 'Маша':
-#     print('Ура, это же МАША!')
-# elif username == 'Марина':
-#     print('Я так ждала Вас, Марина!')
-# elif username == 'Ильнар':
-#     print('Ильнар - топ)')
-# else:
-#     print('Привет, ', username)
-
-# Управляющие конструкции
-# while
-
-# original = 23
-# inverted = 0
-# while original != 0:
-#     inverted = inverted * 10 + (original % 10)
-#     original //= 10
-#     print(original)
-# else:
-#     print('Пожалуй')
-#     print('хватит )')
-# print(inverted)
-
-# Управляющие конструкции
-# for
-
-# r = range(1, 5, 2)# [1, 2, 3, 4, 10, 5]
-# for i in 'qwe - rty':
-#     print(i)
-
-# print(len(text))                    # 39
-# print('ещё' in text)                # true
-# print(text.isdigit())               # False
-# print(text.islower())               # True
-# print(text.replace('ещё', 'ЕЩЁ'))
-
-# for c in text:
-#     print(c)
-# text = 'съешь ещё этих мягких французских булок'
-# print(text[0])              # с
-# print(text[1])              # ъ
-# # print(text[len(text)])      # IndexError
-# print(text[len(text)-1])    # к
-# print(text[-5])             # б
-# print(text[:])              # съешь ещё этих мягких французских булок
-# print(text[:2])              # съ
-# print(text[len(text)-2:])   # ок
-# print(text[2:9])            # ешь ещё
-# print(text[6:-18])          # ещё этих мягких
-# print(text[0:len(text):6])  # сеикал
-# print(text[::6])            # сеикал
-# text = text[2:9] + text[-5] + text[:2]
-
-# Списки: введение
-## list = list
-
-# numbers = [1, 2, 3, 4, 5]
-# print(numbers)                  # [1, 2, 3, 4, 5]
-# ran = range(1, 6)
-# print(type(ran))
-# numbers = list(ran)
-# print(type(numbers))
-# print(numbers)                  # [1, 2, 3, 4, 5]
-# numbers[0] = 10
-# print(f'{len(numbers)} len')
-# print(numbers)                  # [10, 2, 3, 4, 5]
-# for i in numbers:
-#     i *= 2
-#     print(i)                    # [20, 4, 6, 8, 10]
-# print(numbers)                  # [10, 2, 3, 4, 5]
-
-# colors = ['red', 'green', 'blue']
-
-# for e in colors:
-#     print(e)                                        # red green blue
-
-# for e in colors:
-#     print(e * 2)                                    # redred greengreen blueblue
-
-# colors.append('grey')                               # добавить в конец
-# print(colors == ['red', 'green', 'blue', 'grey'])   # True
-# colors.remove('red')                                # del colors[0] удалить элемент
+# exit()
 
 # Функции
 
-def f(x):
-    if x == 1:
-        return 'Целое'
-    elif x == 2.3:
-        return 23
-    else:
-        return
+# import hello as h
 
+# print(h.f(1))     # Целое
+# print(h.f(2.3))   # 23
+# print(h.f(28))    # None
 
-arg = 2
-print(f(arg))
-print(type(f(arg)))
+# def new_string(symbol, count):
+#     return symbol * count
+
+# print(new_string('!', 5))   # !!!!!
+# print(new_string('!'))      # TypeError: new_string() missing 1 required positional argument: 'count'
+
+# def new_string(symbol, count = 3):
+#     return symbol * count
+
+# print(new_string('!', 5))   # !!!!!
+# print(new_string('!'))      # !!!
+# print(new_string(4))        # 12
+
+# def concatenatio(*params):
+#     res = 0
+#     for item in params:
+#         res += item
+#     return res
+
+# print(concatenatio('a', 's', 'd', 'w')) # asdw
+# print(concatenatio('a', '1')) # a1
+# print(concatenatio(1, 2, 3, 4)) # TypeError: ...
+
+# Рекурсия
+
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     else:
+#         return fib(n - 1) + fib(n - 2)
+
+# list = []
+# for e in range(1, 10):
+#     list.append(fib(e))
+# print(list) # [1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+# Кортежи
+
+# t = ()
+# print(type(t))      # <class 'tuple'>
+# t = (1,)
+# print(type(t))      # <class 'tuple'>
+# t = (1)
+# print(type(t))      # <class 'int'>
+# t = (28, 9, 1990)
+# print(type(t))      # <class 'tuple'>
+# colors = ['red', 'green', 'blue']
+# print(colors)       # ['red', 'green', 'blue']
+# t = tuple(colors)
+# print(t)            # ('red', 'green', 'blue')
+
+# t = tuple(['red', 'green', 'blue'])
+# # print(t[0])             # red
+# # print(t[2])             # blue
+# # # print(t[10])          # IndexError: tuple index out of range
+# # print(t[-2])            # green
+# # print(t[-200])          # IndexError: tuple index out of range
+
+# for e in t:
+#     print(e)              # red gren blue
+
+# t[0] = 'black'            # TypeError: 'tuple' object does not support item assignment
+
+# t = tuple(['red', 'green', 'blue'])
+# red, green, blue = t
+# print('r:{} g:{} b:{}'.format(red, green, blue))        # r:red g:green b:blue
+
+# a = (3, 4, 5)
+# # print(a)
+# # print(a[0])
+# # a[0] = 12 # TypeError: 'tuple' object does not support item assignment
+
+# for item in a:
+#     print(item)
+
+# Словари
+
+# dictionary = {}
+# dictionary = \
+#     {
+#         'up': '↑',
+#         'left': '←',
+#         'down': '↓',
+#         'right': '→'
+#     }
+# print(dictionary['up'])     # ↑
+# # dictionary['up'] = 'up'
+# # print(dictionary['up'])
+# # print(dictionary) # {'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
+# # print(dictionary['left']) # ←
+# # типы ключей могут отличаться
+# del dictionary['left']      # удаление элемента
+
+# for item in dictionary:
+#     print('{}: {}'.format(item, dictionary[item]))
+
+# # for v in dictionary:
+#     print(dictionary[v])
+
+# Множества
+
+# colors = {'red', 'green', 'blue'}
+# print(colors) # <class 'set'>
+# colors.add('red')
+# print(colors) # {'red', 'green', 'blue'}
+# colors.add('gray')
+# print(colors) # {'gray', 'red', 'green', 'blue'}
+# colors.remove('red')
+# print(colors) # {'gray', 'blue', 'green'}
+# # colors.remove('red')
+# # print(colors) # KeyError: 'red'
+# colors.discard('red')
+# print(colors) # {'gray', 'blue', 'green'}
+# colors.clear()
+# print(colors) # set()
+
+# a = {1, 2, 3, 5, 8}
+# # b = {2, 5, 8, 13, 21}
+# b = set([2, 5, 8, 13, 21])
+# c = set((2, 5, 8, 13, 21))
+# print(type(a))  # <class 'set'>
+# print(type(b))  # <class 'set'>
+# print(type(c))  # <class 'set'>
+a = {1, 1, 1, 1, 1}
+print(a)            # {1}
+# c = a.copy()
+# print(c) # {1, 2, 3, 5, 8}
+# u = a.union(b)
+# print(u) # {1, 2, 3, 5, 8, 13, 21}
+# i = a.intersection(b)
+# print(i) # {8, 2, 5}
+# dl = a.difference(b)
+# print(dl) # {1, 3}
+# dr = b.difference(a)
+# print(dr) # {13, 21}
+
+# q = a \
+#     .union(b) \
+#     .difference(a.intersection(b))
+# print(q) # {1, 21, 3, 13}
+
+# s = frozenset(a)
+
+# list1 = [1, 2, 3, 4, 5]
+# list2 = list1
+
+# for e in list1:
+#     print(e)
+
+# print()
+
+# for e in list2:
+#     print(e)
+
+# list1[0] = 123
+# list2[1] = 333
+
+# for e in list1:
+#     print(e)
+
+# print()
+
+# for e in list2:
+#     print(e)
+
+# list1 = [1, 2, 3, 4, 5]
+
+# # print(list1.pop(2))
+# # print(list1.insert(2, 11))
+# print(list1.append(11))
+# print(list1)
